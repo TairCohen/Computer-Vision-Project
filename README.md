@@ -1,4 +1,4 @@
-# Skin lesions Classification
+# Skin lesions Classification Project
 
 A deep learning-based computer vision model for classifying three clinically similar skin conditions: Psoriasis + Lichen Planus, Eczema, and Atopic Dermatitis.
 
@@ -11,10 +11,11 @@ Deep learning-based automated classification can assist in differentiating these
 
 The images used in this project were obtained from a Kaggle dataset. 
 The dataset consists images of skin lesions labeled into three classes:
+
 * Psoriasis + Lichen Planus
 * Eczema
 * Atopic Dermatitis
-* 
+  
 
 ## Environment & Python Packages
 
@@ -42,7 +43,7 @@ The architecture consists of:
 
 Model performance was evaluated on an unseen test set using:
 
-*Accuracy, Precision, Recall, F1-score
+* Accuracy, Precision, Recall, F1-score
 * Confusion Matrix to visualize misclassifications
 
 ## Conclusion
