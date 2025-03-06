@@ -9,7 +9,7 @@ Deep learning-based automated classification can assist in differentiating these
 
 ## Dataset
 
-The images used in this project were obtained from a Kaggle dataset. 
+The images used in this project were obtained from Kaggle [Skin diseases image dataset](https://www.kaggle.com/datasets/ismailpromus/skin-diseases-image-dataset) dataset. 
 The dataset consists images of skin lesions labeled into three classes:
 
 * Psoriasis + Lichen Planus
