@@ -46,6 +46,9 @@ Model performance was evaluated on an unseen test set using:
 * Accuracy, Precision, Recall, F1-score
 * Confusion Matrix to visualize misclassifications
 
+## Results #TODO
+
+
 ## Conclusion
 
 This project demonstrates that deep learning can effectively differentiate between Psoriasis + Lichen Planus, Eczema, and Atopic Dermatitis, despite their clinical similarities. 
