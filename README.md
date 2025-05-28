@@ -15,7 +15,8 @@ The dataset consists images of skin lesions labeled into three classes:
 * Psoriasis + Lichen Planus
 * Eczema
 * Atopic Dermatitis
-  
+
+  Image augmentations were applied to increase the variability of the dataset and improve model generalization.
 
 ## Environment & Python Packages
 
@@ -24,15 +25,15 @@ I used pyTorch, Torchvision, and PyTorch Lightning python packages to implement 
 
 ## Model Architecture  
 
-A deep convolutional neural network (CNN) was designed for lesion classification. It uses EfficientNet-B3 as the backbone, pre-trained on ImageNet (IMAGENET1K_V1), with a modified classifier head consisting of a dropout layer (0.2) and a fully connected layer matching the number of output classes
+A deep convolutional neural network (CNN) was designed for lesion classification. 
+It uses EfficientNet-B3 as the backbone, pre-trained on ImageNet (IMAGENET1K_V1), with a modified classifier head consisting of a dropout layer (0.2) and a fully connected layer matching the number of output classes
 
 ## Training Process
 
-* Data Split: Training (80%) and Validation (20%)
+* Data Split: Training (80%),  Validation (10%) and Test (10%)
 * Loss Function: Cross-Entropy Loss
-* Optimizer: Adam
+* Optimizer: SGD
 * Learning Rate Scheduling: Reduce LR on Plateau
-* Early Stopping: Stop training when validation loss no longer improves
 
 ## Evaluation
 
