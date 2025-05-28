@@ -15,7 +15,9 @@ The dataset consists images of skin lesions labeled into three classes:
 * Psoriasis + Lichen Planus
 * Eczema
 * Atopic Dermatitis
-  
+
+Image augmentations were applied to increase the variability of the dataset and improve model generalization.
+
 
 ## Environment & Python Packages
 
@@ -28,11 +30,10 @@ A deep convolutional neural network (CNN) was designed for lesion classification
 
 ## Training Process
 
-* Data Split: Training (80%) and Validation (20%)
+* Data Split: Training (80%), Validation (10%) and Test (10%)
 * Loss Function: Cross-Entropy Loss
-* Optimizer: Adam
+* Optimizer: SGD
 * Learning Rate Scheduling: Reduce LR on Plateau
-* Early Stopping: Stop training when validation loss no longer improves
 
 ## Evaluation
 
