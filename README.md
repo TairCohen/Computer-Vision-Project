@@ -56,3 +56,4 @@ The classification model achieved an overall accuracy of 75%.
 ## Conclusion
 
 This project demonstrates that deep learning can effectively differentiate between Psoriasis + Lichen Planus, Eczema, and Atopic Dermatitis, despite their clinical similarities. Increasing the number of images in future studies could further enhance model performance and classification accuracy.
+
