@@ -1,4 +1,4 @@
-# Skin lesions Classification Project
+# Skin Lesions Classification Project
 
 A deep learning-based computer vision model for classifying three clinically similar skin conditions: Psoriasis + Lichen Planus, Eczema, and Atopic Dermatitis.
 
@@ -22,14 +22,9 @@ The dataset consists images of skin lesions labeled into three classes:
 The project was developed and executed using a Jupyter Notebook on the Kaggle website. 
 I used pyTorch, Torchvision, and PyTorch Lightning python packages to implement the model.
 
-## Model Architecture #TODO 
+## Model Architecture  
 
-A deep convolutional neural network (CNN) was designed for lesion classification. 
-The architecture consists of:
-
-* Pretrained CNN Backbone () for feature extraction
-* Fully Connected Layers with dropout and batch normalization
-* Softmax Activation for multi-class classification
+A deep convolutional neural network (CNN) was designed for lesion classification. It uses EfficientNet-B3 as the backbone, pre-trained on ImageNet (IMAGENET1K_V1), with a modified classifier head consisting of a dropout layer (0.2) and a fully connected layer matching the number of output classes
 
 ## Training Process
 
@@ -46,9 +41,19 @@ Model performance was evaluated on an unseen test set using:
 * Accuracy, Precision, Recall, F1-score
 * Confusion Matrix to visualize misclassifications
 
-## Results #TODO
+## Results 
+
+Training Process:
+
+![Screenshot 2025-05-28 at 8 34 18](https://github.com/user-attachments/assets/8d4954f3-9b08-4800-9d63-abbf115671cd)
+
+
+The classification model achieved an overall accuracy of 75%.
+
+![Screenshot 2025-05-28 at 8 23 02](https://github.com/user-attachments/assets/50161f88-73d2-4d20-a833-c101b0be5876)
 
 
 ## Conclusion
 
-This project demonstrates that deep learning can effectively differentiate between Psoriasis + Lichen Planus, Eczema, and Atopic Dermatitis, despite their clinical similarities. 
+This project demonstrates that deep learning can effectively differentiate between Psoriasis + Lichen Planus, Eczema, and Atopic Dermatitis, despite their clinical similarities. Increasing the number of images in future studies could further enhance model performance and classification accuracy.
+
